@@ -19,7 +19,7 @@ This repository arose from a need to be able to play and experiment with Clojure
 The produced image is *by no means minimal* and it is not designed to be.
 On the contrary, a handful of development tools deemed useful are installed to make for a more enjoyable developer experience.
 
-## Prerequisites
+## ❗️ Prerequisites
 
 The only prerequisite is a container platform like [Docker](https://www.docker.com) or [Podman](https://podman.io).
 
