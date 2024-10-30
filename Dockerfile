@@ -20,7 +20,8 @@ RUN --mount=type=bind,source=init-prefix.el,target=/home/dev/init-prefix.el \
     ln -s ~/prelude ~/.emacs.d && \
     git clone --depth 1 https://github.com/d12frosted/elpa-mirror.git ~/prelude/elpa-mirror && \
     cat ~/init-prefix.el ~/prelude/init.el > ~/merged && mv ~/merged ~/prelude/init.el && \
-    echo 'eval "$(starship init bash)"' >> ~/.bashrc
+    echo 'eval "$(starship init bash)"' >> ~/.bashrc && \
+    clojure -Ttools install-latest :lib io.github.seancorfield/deps-new :as new
 
 WORKDIR /home/dev/workspace
 
