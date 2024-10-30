@@ -22,6 +22,7 @@ The produced image contains, apart from the Clojure CLI, the following manually 
   * [jq](https://jqlang.github.io/jq/) for JSON processing
   * [figlet](http://www.figlet.org/) for making ASCII art
   * [lolcat](https://github.com/busyloop/lolcat) for rainbow colouring text (accessible under `/usr/games/lolcat`)
+* [deps-new](https://github.com/seancorfield/deps-new), a Clojure tool for handily creating projects
 
 This repository arose from a need to be able to play and experiment with Clojure and functional programming in general in environments that are behind a corporate firewall and thus make downloading artifacts and installing executables difficult or at the very least unpleasant.
 
@@ -78,6 +79,12 @@ clojure
 ```
 
 (You can exit the REPL by sending the `EOF` character, usually by typing `CTRL+D` or `CTRL+Z`.)
+
+or you can create a new application using *deps-new:*
+
+```bash
+clojure -Tnew app :name tdinev/demo
+```
 
 Interacting (via [Git Bash](https://git-scm.com/downloads/win) on Windows) looks like this:
 
