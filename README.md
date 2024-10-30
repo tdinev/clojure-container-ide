@@ -2,11 +2,12 @@
 
 ## 💼 Contents
 
-The `Dockerfile` in this repository allows building an OCI image usable as a portable development environment based on the latest [official Clojure image](https://hub.docker.com/_/clojure).
-The produced image contains the following manually added utilities:
+The `Dockerfile` in this repository allows building an OCI image usable as a portable development environment based on the [official Clojure image](https://hub.docker.com/_/clojure) tagged `tools-deps-bookworm`.
+The produced image contains, apart from the Clojure CLI, the following manually added utilities:
 
 * [Emacs](https://www.gnu.org/software/emacs)
 * [Prelude configuration](https://prelude.emacsredux.com) for Emacs
+* [CIDER](https://cider.mx/) for Clojure development in Emacs (because, somehow, Prelude does not install it by default, contrary to what is written in its [docs](https://prelude.emacsredux.com/en/latest/modules/clojure/))
 * Local mirrors of the following package archives for Emacs:
   * [GNU ELPA](https://elpa.gnu.org)
   * [Org mode ELPA](https://orgmode.org)
@@ -77,14 +78,6 @@ clojure
 ```
 
 (You can exit the REPL by sending the `EOF` character, usually by typing `CTRL+D` or `CTRL+Z`.)
-
-Or you can start a new app using Leiningen:
-
-```bash
-lein new app demo
-```
-
-and Emacs as your editor (the first Emacs startup time will be considerable as a number of configurations will be performed).
 
 Interacting (via [Git Bash](https://git-scm.com/downloads/win) on Windows) looks like this:
 
