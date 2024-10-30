@@ -14,8 +14,8 @@ RUN apt-get update && \
 USER dev
 
 # Install Prelude and a local copy of some Emacs package archives.
-COPY init-prefix.el /home/dev/
-RUN git clone https://github.com/bbatsov/prelude.git ~/prelude && \
+RUN --mount=type=bind,source=init-prefix.el,target=/home/dev/init-prefix.el \
+    git clone https://github.com/bbatsov/prelude.git ~/prelude && \
     ln -s ~/prelude ~/.emacs.d && \
     git clone --depth 1 https://github.com/d12frosted/elpa-mirror.git ~/prelude/elpa-mirror && \
     cat ~/init-prefix.el ~/prelude/init.el > ~/merged && mv ~/merged ~/prelude/init.el
