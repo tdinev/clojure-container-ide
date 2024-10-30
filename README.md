@@ -11,6 +11,13 @@ The produced image contains the following manually added utilities:
   * [GNU ELPA](https://elpa.gnu.org)
   * [Org mode ELPA](https://orgmode.org)
   * [MELPA](https://melpa.org)
+* some command-line utilities like
+  * [Starship](https://starship.rs/) prompt
+  * [tree](https://en.wikipedia.org/wiki/Tree_(command)) for recursive directory listings
+  * [HTTPie](https://httpie.io/) for HTTP API testing
+  * [jq](https://jqlang.github.io/jq/) for JSON processing
+  * [figlet](http://www.figlet.org/) for making ASCII art
+  * [lolcat](https://github.com/busyloop/lolcat) for rainbow colouring text (accessible under `/usr/games/lolcat`)
 
   maintained by [d12frosted](https://github.com/d12frosted/elpa-mirror) and as instructed by [ninrod](https://github.com/ninrod/emacs-antiproxy).
 
@@ -57,7 +64,7 @@ Spin off a container in interactive mode:
 docker run -it --name clojure-dev clojure-ide
 ```
 
-The container will be called `clojure-dev`.
+The container will be called `clojure-dev` in this case.
 
 ### Use the container
 
@@ -78,6 +85,10 @@ lein new app test-app
 
 and Emacs as your editor (the first Emacs startup time will be considerable as a number of configurations will be performed).
 
+Interacting looks like this:
+
+![The end result](docs/end-result.png)
+
 ### Stopping the container
 
 You can exit the container from within by typing
@@ -96,3 +107,13 @@ If the container is exited, you can resume it to avoid the somewhat long waiting
 docker container start clojure-dev
 docker attach clojure-dev
 ```
+
+### Deploying commands as `root`
+
+If you want to spawn off a bash as `root` in a running container (e.g., to install further packages), you can use
+
+```bash
+docker exec -it -u root clojure-dev bash
+```
+
+provided the container name is `clojure-dev`.
