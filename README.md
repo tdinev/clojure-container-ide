@@ -86,7 +86,7 @@ lein new app demo
 
 and Emacs as your editor (the first Emacs startup time will be considerable as a number of configurations will be performed).
 
-Interacting looks like this:
+Interacting (via [Git Bash](https://git-scm.com/downloads/win) on Windows) looks like this:
 
 ![The end result](docs/end-result.png)
 
