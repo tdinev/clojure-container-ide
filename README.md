@@ -81,7 +81,7 @@ clojure
 Or you can start a new app using Leiningen:
 
 ```bash
-lein new app test-app
+lein new app demo
 ```
 
 and Emacs as your editor (the first Emacs startup time will be considerable as a number of configurations will be performed).
