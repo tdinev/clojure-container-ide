@@ -26,8 +26,10 @@ The produced image contains, apart from the Clojure CLI, the following manually 
 
 This repository arose from a need to be able to play and experiment with Clojure and functional programming in general in environments that are behind a corporate firewall and thus make downloading artifacts and installing executables difficult or at the very least unpleasant.
 
-The produced image is *by no means minimal* and it is not designed to be.
-On the contrary, a handful of development tools deemed useful are installed to make for a more enjoyable developer experience.
+> [!WARNING]
+> The produced image is *by no means minimal* and it is not designed to be.
+> On the contrary, a handful of development tools deemed useful are installed to make for a more enjoyable developer experience.
+> This, and above all the local versions of the Emacs package archives, leads to a large image size, currently around 3.5 GB.
 
 ## ❗️ Prerequisites
 
