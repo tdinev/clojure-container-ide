@@ -11,13 +11,13 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-;; Disable check package signatures (needed as queue-0.2 signature has expired).
-(setq package-check-signature nil)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; End of part taken from https://github.com/ninrod/emacs-antiproxy.
 ;; Customizations follow.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Disable check package signatures (needed as queue-0.2 signature has expired).
+(setq package-check-signature nil)
 
 ;; Set whitespace's line width to big value to disable highlighting overly long lines.
 (setq whitespace-line-column 500)
