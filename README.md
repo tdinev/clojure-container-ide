@@ -11,6 +11,9 @@ The produced image contains the following manually added utilities:
   * [GNU ELPA](https://elpa.gnu.org)
   * [Org mode ELPA](https://orgmode.org)
   * [MELPA](https://melpa.org)
+
+  maintained by [d12frosted](https://github.com/d12frosted/elpa-mirror) and as instructed by [ninrod](https://github.com/ninrod/emacs-antiproxy).
+
 * some command-line utilities like
   * [Starship](https://starship.rs/) prompt
   * [tree](https://en.wikipedia.org/wiki/Tree_(command)) for recursive directory listings
@@ -18,8 +21,6 @@ The produced image contains the following manually added utilities:
   * [jq](https://jqlang.github.io/jq/) for JSON processing
   * [figlet](http://www.figlet.org/) for making ASCII art
   * [lolcat](https://github.com/busyloop/lolcat) for rainbow colouring text (accessible under `/usr/games/lolcat`)
-
-  maintained by [d12frosted](https://github.com/d12frosted/elpa-mirror) and as instructed by [ninrod](https://github.com/ninrod/emacs-antiproxy).
 
 This repository arose from a need to be able to play and experiment with Clojure and functional programming in general in environments that are behind a corporate firewall and thus make downloading artifacts and installing executables difficult or at the very least unpleasant.
 
