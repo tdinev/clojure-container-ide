@@ -1,5 +1,5 @@
-# The latest tag contains Clojure CLI as well as Leiningen.
-FROM clojure:latest
+# The latest tag contains Clojure CLI, but not Leiningen.
+FROM clojure:tools-deps-bookworm
 
 LABEL maintainer="todor.dinev@gmail.com"
 
